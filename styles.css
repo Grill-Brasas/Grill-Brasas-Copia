@@ -688,15 +688,51 @@ body {
     line-height: 1.6;
 }
 
+.map-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
 .map-wrapper h3 {
     font-size: 2.5rem;
     background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     font-weight: 700;
     letter-spacing: -0.5px;
+}
+
+.maps-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.8rem;
+    background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid transparent;
+}
+
+.maps-btn:hover {
+    background: linear-gradient(135deg, #34A853 0%, #4285F4 100%);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(66, 133, 244, 0.5);
+}
+
+.maps-btn svg {
+    width: 20px;
+    height: 20px;
 }
 
 .map-container {
